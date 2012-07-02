@@ -22,3 +22,13 @@ prop = MOAIProp.new ()
 prop:setDeck ( gfxQuad )
 layer:insertProp ( prop )
 
+function mainLoop()
+    while true do
+        prop:addLoc(1, 1, 0)
+        coroutine.yield()
+    end
+end
+
+thread = MOAICoroutine.new ()
+thread:run ( mainLoop )
+

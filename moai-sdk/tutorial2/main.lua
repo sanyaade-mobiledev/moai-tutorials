@@ -22,3 +22,12 @@ prop = MOAIProp.new ()
 prop:setDeck ( gfxQuad )
 layer:insertProp ( prop )
 
+prop:setLoc(-100, -100, 0)
+prop:setRot(0, 0, 90)
+prop:setColor(1, 1, 0.5, 1)
+prop:setScl(0.5, 0.5, 1)
+
+prop:moveLoc(100, 50, 0, 3)
+prop:moveRot(0, 0, 360, 3)
+prop:moveColor(-1, -1, -0.5, -1, 3)
+prop:moveScl(1, 1, 0, 3)
